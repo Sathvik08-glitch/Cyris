@@ -7,6 +7,7 @@ from commands import handle_command
 from memory_commands import handle_memory
 from workflow_commands import handle_workflow 
 from config import WAKE_WORDS
+from internet_commands import handle_internet
 
 startup()
 
@@ -41,6 +42,9 @@ while True:
         continue
 
     if handle_workflow(command):
+        continue
+
+    if handle_internet(command):
         continue
 
     response = get_response(command)

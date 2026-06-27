@@ -1,13 +1,16 @@
 {
     "assistant_name": "Cyris",
-    "creator": "Sathvik",
     "version": "3.0",
+    "creator": "Sathvik",
     "wake_words": [
         "cyris",
         "cyrus",
         "service",
         "serious",
         "sarees",
-        "series"
+        "series",
+        "siris",
+        "siri",
+        "cyr"
     ]
 }
