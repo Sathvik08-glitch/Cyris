@@ -37,3 +37,9 @@ def open_github():
         "--app-id=mjoklplbddabcmpepnokjaffbmgbkkgg"
     ])
 
+def open_spotify():
+    subprocess.Popen([
+        r"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe",
+        "--profile-directory=Default",
+        "--app-id=YOUR_SPOTIFY_APP_ID"
+    ])

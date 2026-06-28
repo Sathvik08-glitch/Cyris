@@ -1,5 +1,5 @@
 from voice import speak, listen
-
+from logger import log
 from workflow import coding_mode
 
 from apps import (
@@ -16,6 +16,8 @@ def handle_workflow(command):
     speak("Activating coding mode")
 
     coding_mode()
+
+    log("Coding Mode Activated")
 
     speak("Would you like ChatGPT, Claude, or Antigravity?")
 

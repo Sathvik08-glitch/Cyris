@@ -1,4 +1,5 @@
 from voice import speak
+from logger import log
 from internet import (
     search_google,
     search_youtube,
@@ -15,6 +16,7 @@ def handle_internet(command):
         query = extract_query(command, "search youtube")
 
         if query:
+            log(f"YouTube Search: {query}")
             speak(f"Searching YouTube for {query}")
             search_youtube(query)
 
@@ -24,6 +26,7 @@ def handle_internet(command):
         query = extract_query(command, "search github")
 
         if query:
+            log(f"GitHub Search: {query}")
             speak(f"Searching GitHub for {query}")
             search_github(query)
 
@@ -33,6 +36,7 @@ def handle_internet(command):
         query = extract_query(command, "search google")
 
         if query:
+            log(f"Google Search: {query}")
             speak(f"Searching Google for {query}")
             search_google(query)
 

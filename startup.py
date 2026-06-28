@@ -1,5 +1,6 @@
 import datetime
 from voice import speak
+from logger import log
 
 def startup():
 
@@ -14,6 +15,7 @@ def startup():
     else:
         greeting = "Good Evening"
 
+    log("Cyris Started")
     speak(f"{greeting} Sir.")
     speak("All systems are online.")
     speak("How may I assist you today?")
